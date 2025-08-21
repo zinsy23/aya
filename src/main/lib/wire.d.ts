@@ -3,8 +3,8 @@ import Long = require("long");
 /** Namespace io. */
 export namespace io {
 
-    /** Namespace liriliri. */
-    namespace liriliri {
+    /** Namespace zinsy23. */
+    namespace zinsy23 {
 
         /** Namespace aya. */
         namespace aya {
@@ -29,7 +29,7 @@ export namespace io {
                  * Constructs a new Request.
                  * @param [properties] Properties to set
                  */
-                constructor(properties?: io.liriliri.aya.IRequest);
+                constructor(properties?: io.zinsy23.aya.IRequest);
 
                 /** Request id. */
                 public id: string;
@@ -45,23 +45,23 @@ export namespace io {
                  * @param [properties] Properties to set
                  * @returns Request instance
                  */
-                public static create(properties?: io.liriliri.aya.IRequest): io.liriliri.aya.Request;
+                public static create(properties?: io.zinsy23.aya.IRequest): io.zinsy23.aya.Request;
 
                 /**
-                 * Encodes the specified Request message. Does not implicitly {@link io.liriliri.aya.Request.verify|verify} messages.
+                 * Encodes the specified Request message. Does not implicitly {@link io.zinsy23.aya.Request.verify|verify} messages.
                  * @param message Request message or plain object to encode
                  * @param [writer] Writer to encode to
                  * @returns Writer
                  */
-                public static encode(message: io.liriliri.aya.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+                public static encode(message: io.zinsy23.aya.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
                 /**
-                 * Encodes the specified Request message, length delimited. Does not implicitly {@link io.liriliri.aya.Request.verify|verify} messages.
+                 * Encodes the specified Request message, length delimited. Does not implicitly {@link io.zinsy23.aya.Request.verify|verify} messages.
                  * @param message Request message or plain object to encode
                  * @param [writer] Writer to encode to
                  * @returns Writer
                  */
-                public static encodeDelimited(message: io.liriliri.aya.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+                public static encodeDelimited(message: io.zinsy23.aya.IRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
                 /**
                  * Decodes a Request message from the specified reader or buffer.
@@ -71,7 +71,7 @@ export namespace io {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): io.liriliri.aya.Request;
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): io.zinsy23.aya.Request;
 
                 /**
                  * Decodes a Request message from the specified reader or buffer, length delimited.
@@ -80,7 +80,7 @@ export namespace io {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): io.liriliri.aya.Request;
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): io.zinsy23.aya.Request;
 
                 /**
                  * Verifies a Request message.
@@ -94,7 +94,7 @@ export namespace io {
                  * @param object Plain object
                  * @returns Request
                  */
-                public static fromObject(object: { [k: string]: any }): io.liriliri.aya.Request;
+                public static fromObject(object: { [k: string]: any }): io.zinsy23.aya.Request;
 
                 /**
                  * Creates a plain object from a Request message. Also converts values to other types if specified.
@@ -102,7 +102,7 @@ export namespace io {
                  * @param [options] Conversion options
                  * @returns Plain object
                  */
-                public static toObject(message: io.liriliri.aya.Request, options?: $protobuf.IConversionOptions): { [k: string]: any };
+                public static toObject(message: io.zinsy23.aya.Request, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
                 /**
                  * Converts this Request to JSON.
@@ -135,7 +135,7 @@ export namespace io {
                  * Constructs a new Response.
                  * @param [properties] Properties to set
                  */
-                constructor(properties?: io.liriliri.aya.IResponse);
+                constructor(properties?: io.zinsy23.aya.IResponse);
 
                 /** Response id. */
                 public id: string;
@@ -148,23 +148,23 @@ export namespace io {
                  * @param [properties] Properties to set
                  * @returns Response instance
                  */
-                public static create(properties?: io.liriliri.aya.IResponse): io.liriliri.aya.Response;
+                public static create(properties?: io.zinsy23.aya.IResponse): io.zinsy23.aya.Response;
 
                 /**
-                 * Encodes the specified Response message. Does not implicitly {@link io.liriliri.aya.Response.verify|verify} messages.
+                 * Encodes the specified Response message. Does not implicitly {@link io.zinsy23.aya.Response.verify|verify} messages.
                  * @param message Response message or plain object to encode
                  * @param [writer] Writer to encode to
                  * @returns Writer
                  */
-                public static encode(message: io.liriliri.aya.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+                public static encode(message: io.zinsy23.aya.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
 
                 /**
-                 * Encodes the specified Response message, length delimited. Does not implicitly {@link io.liriliri.aya.Response.verify|verify} messages.
+                 * Encodes the specified Response message, length delimited. Does not implicitly {@link io.zinsy23.aya.Response.verify|verify} messages.
                  * @param message Response message or plain object to encode
                  * @param [writer] Writer to encode to
                  * @returns Writer
                  */
-                public static encodeDelimited(message: io.liriliri.aya.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+                public static encodeDelimited(message: io.zinsy23.aya.IResponse, writer?: $protobuf.Writer): $protobuf.Writer;
 
                 /**
                  * Decodes a Response message from the specified reader or buffer.
@@ -174,7 +174,7 @@ export namespace io {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): io.liriliri.aya.Response;
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): io.zinsy23.aya.Response;
 
                 /**
                  * Decodes a Response message from the specified reader or buffer, length delimited.
@@ -183,7 +183,7 @@ export namespace io {
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): io.liriliri.aya.Response;
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): io.zinsy23.aya.Response;
 
                 /**
                  * Verifies a Response message.
@@ -197,7 +197,7 @@ export namespace io {
                  * @param object Plain object
                  * @returns Response
                  */
-                public static fromObject(object: { [k: string]: any }): io.liriliri.aya.Response;
+                public static fromObject(object: { [k: string]: any }): io.zinsy23.aya.Response;
 
                 /**
                  * Creates a plain object from a Response message. Also converts values to other types if specified.
@@ -205,7 +205,7 @@ export namespace io {
                  * @param [options] Conversion options
                  * @returns Plain object
                  */
-                public static toObject(message: io.liriliri.aya.Response, options?: $protobuf.IConversionOptions): { [k: string]: any };
+                public static toObject(message: io.zinsy23.aya.Response, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
                 /**
                  * Converts this Response to JSON.

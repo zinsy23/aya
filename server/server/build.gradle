@@ -9,7 +9,7 @@ dependencies {
 }
 
 android {
-    namespace 'io.liriliri.aya'
+    namespace 'io.zinsy23.aya'
 
     compileSdk = 33
 

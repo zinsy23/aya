@@ -112,27 +112,27 @@ function getTemplate(): MenuItemConstructorOptions[] {
       {
         label: t('documentation'),
         click() {
-          shell.openExternal(
-            `https://aya.liriliri.io/${
-              language.get() === 'zh-CN' ? 'zh/' : ''
-            }guide/`
-          )
+          // shell.openExternal(``
+            // `https://aya.liriliri.io/${
+            //   language.get() === 'zh-CN' ? 'zh/' : ''
+            // }guide/`
+          // )
         },
       },
       {
         label: t('donate'),
         click() {
-          const link =
-            language.get() === 'zh-CN'
-              ? 'http://surunzi.com/wechatpay.html'
-              : 'https://ko-fi.com/surunzi'
-          shell.openExternal(link)
+          // const link =
+          //   language.get() === 'zh-CN'
+          //     ? 'http://surunzi.com/wechatpay.html'
+          //     : 'https://ko-fi.com/surunzi'
+          // shell.openExternal(link)
         },
       },
       {
         label: t('reportIssue'),
         click() {
-          shell.openExternal('https://github.com/liriliri/aya/issues')
+          shell.openExternal('https://github.com/zinsy23/aya/issues')
         },
       },
       {

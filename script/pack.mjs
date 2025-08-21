@@ -15,9 +15,13 @@ const config = {
   directories: {
     output: `../release/${pkg.version}`,
   },
-  files: ['main', 'preload', 'renderer', 'adb', 'server'],
-  asarUnpack: ['adb/**/*', 'server/**/*'],
+  files: ['main', 'preload', 'renderer'],
   artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
+  extraResources: {
+    from: 'resources',
+    to: './',
+    filter: ['**/*'],
+  },
   nsis: {
     allowToChangeInstallationDirectory: true,
     oneClick: false,
@@ -40,7 +44,7 @@ const config = {
   },
   publish: {
     provider: 'generic',
-    url: 'https://release.liriliri.io/',
+    url: 'https://aya-releases.josephzins.com/',  // Change this to your server
     channel: publishChannel,
   },
 }

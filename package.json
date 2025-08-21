@@ -1,9 +1,9 @@
 {
-  "name": "aya",
-  "productName": "AYA",
-  "appId": "io.liriliri.aya",
+  "name": "aya-zinsy23",
+  "productName": "AYA zinsy23",
+  "appId": "io.zinsy23.aya",
   "version": "1.12.2",
-  "description": "Android adb desktop app",
+  "description": "Android adb desktop app (Fork)",
   "main": "dist/main/index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:main\" \"npm run dev:preload\" \"npm run dev:renderer\"",
@@ -28,7 +28,7 @@
   "keywords": [
     "adb"
   ],
-  "author": "surunzi",
+  "author": "zinsy23",
   "license": "AGPL-3.0",
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.689.0",
@@ -87,6 +87,6 @@
     "vite": "^5.4.9",
     "webm-muxer": "^5.1.2",
     "xml2js": "^0.6.2",
-    "zx": "^8.1.9"
+    "zx": "^8.8.0"
   }
 }
