@@ -1,4 +1,4 @@
-package io.liriliri.aya
+package io.zinsy23.aya
 
 import android.annotation.SuppressLint
 import android.os.IBinder

@@ -40,7 +40,7 @@ const config = {
   },
   publish: {
     provider: 'generic',
-    url: 'https://release.liriliri.io/',
+    url: 'https://aya-releases.josephzins.com/',  // Change this to your server
     channel: publishChannel,
   },
 }

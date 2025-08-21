@@ -16,20 +16,20 @@ export const io = $root.io = (() => {
      */
     const io = {};
 
-    io.liriliri = (function() {
+    io.zinsy23 = (function() {
 
         /**
-         * Namespace liriliri.
+         * Namespace zinsy23.
          * @memberof io
          * @namespace
          */
-        const liriliri = {};
+        const zinsy23 = {};
 
-        liriliri.aya = (function() {
+        zinsy23.aya = (function() {
 
             /**
              * Namespace aya.
-             * @memberof io.liriliri
+             * @memberof io.zinsy23
              * @namespace
              */
             const aya = {};
@@ -38,7 +38,7 @@ export const io = $root.io = (() => {
 
                 /**
                  * Properties of a Request.
-                 * @memberof io.liriliri.aya
+                 * @memberof io.zinsy23.aya
                  * @interface IRequest
                  * @property {string|null} [id] Request id
                  * @property {string|null} [method] Request method
@@ -47,11 +47,11 @@ export const io = $root.io = (() => {
 
                 /**
                  * Constructs a new Request.
-                 * @memberof io.liriliri.aya
+                 * @memberof io.zinsy23.aya
                  * @classdesc Represents a Request.
                  * @implements IRequest
                  * @constructor
-                 * @param {io.liriliri.aya.IRequest=} [properties] Properties to set
+                 * @param {io.zinsy23.aya.IRequest=} [properties] Properties to set
                  */
                 function Request(properties) {
                     if (properties)
@@ -63,7 +63,7 @@ export const io = $root.io = (() => {
                 /**
                  * Request id.
                  * @member {string} id
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @instance
                  */
                 Request.prototype.id = "";
@@ -71,7 +71,7 @@ export const io = $root.io = (() => {
                 /**
                  * Request method.
                  * @member {string} method
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @instance
                  */
                 Request.prototype.method = "";
@@ -79,7 +79,7 @@ export const io = $root.io = (() => {
                 /**
                  * Request params.
                  * @member {string} params
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @instance
                  */
                 Request.prototype.params = "";
@@ -87,21 +87,21 @@ export const io = $root.io = (() => {
                 /**
                  * Creates a new Request instance using the specified properties.
                  * @function create
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
-                 * @param {io.liriliri.aya.IRequest=} [properties] Properties to set
-                 * @returns {io.liriliri.aya.Request} Request instance
+                 * @param {io.zinsy23.aya.IRequest=} [properties] Properties to set
+                 * @returns {io.zinsy23.aya.Request} Request instance
                  */
                 Request.create = function create(properties) {
                     return new Request(properties);
                 };
 
                 /**
-                 * Encodes the specified Request message. Does not implicitly {@link io.liriliri.aya.Request.verify|verify} messages.
+                 * Encodes the specified Request message. Does not implicitly {@link io.zinsy23.aya.Request.verify|verify} messages.
                  * @function encode
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
-                 * @param {io.liriliri.aya.IRequest} message Request message or plain object to encode
+                 * @param {io.zinsy23.aya.IRequest} message Request message or plain object to encode
                  * @param {$protobuf.Writer} [writer] Writer to encode to
                  * @returns {$protobuf.Writer} Writer
                  */
@@ -118,11 +118,11 @@ export const io = $root.io = (() => {
                 };
 
                 /**
-                 * Encodes the specified Request message, length delimited. Does not implicitly {@link io.liriliri.aya.Request.verify|verify} messages.
+                 * Encodes the specified Request message, length delimited. Does not implicitly {@link io.zinsy23.aya.Request.verify|verify} messages.
                  * @function encodeDelimited
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
-                 * @param {io.liriliri.aya.IRequest} message Request message or plain object to encode
+                 * @param {io.zinsy23.aya.IRequest} message Request message or plain object to encode
                  * @param {$protobuf.Writer} [writer] Writer to encode to
                  * @returns {$protobuf.Writer} Writer
                  */
@@ -133,20 +133,22 @@ export const io = $root.io = (() => {
                 /**
                  * Decodes a Request message from the specified reader or buffer.
                  * @function decode
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
                  * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                  * @param {number} [length] Message length if known beforehand
-                 * @returns {io.liriliri.aya.Request} Request
+                 * @returns {io.zinsy23.aya.Request} Request
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                Request.decode = function decode(reader, length) {
+                Request.decode = function decode(reader, length, error) {
                     if (!(reader instanceof $Reader))
                         reader = $Reader.create(reader);
-                    let end = length === undefined ? reader.len : reader.pos + length, message = new $root.io.liriliri.aya.Request();
+                    let end = length === undefined ? reader.len : reader.pos + length, message = new $root.io.zinsy23.aya.Request();
                     while (reader.pos < end) {
                         let tag = reader.uint32();
+                        if (tag === error)
+                            break;
                         switch (tag >>> 3) {
                         case 1: {
                                 message.id = reader.string();
@@ -171,10 +173,10 @@ export const io = $root.io = (() => {
                 /**
                  * Decodes a Request message from the specified reader or buffer, length delimited.
                  * @function decodeDelimited
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
                  * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                 * @returns {io.liriliri.aya.Request} Request
+                 * @returns {io.zinsy23.aya.Request} Request
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
@@ -187,7 +189,7 @@ export const io = $root.io = (() => {
                 /**
                  * Verifies a Request message.
                  * @function verify
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
                  * @param {Object.<string,*>} message Plain object to verify
                  * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -210,15 +212,15 @@ export const io = $root.io = (() => {
                 /**
                  * Creates a Request message from a plain object. Also converts values to their respective internal types.
                  * @function fromObject
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
                  * @param {Object.<string,*>} object Plain object
-                 * @returns {io.liriliri.aya.Request} Request
+                 * @returns {io.zinsy23.aya.Request} Request
                  */
                 Request.fromObject = function fromObject(object) {
-                    if (object instanceof $root.io.liriliri.aya.Request)
+                    if (object instanceof $root.io.zinsy23.aya.Request)
                         return object;
-                    let message = new $root.io.liriliri.aya.Request();
+                    let message = new $root.io.zinsy23.aya.Request();
                     if (object.id != null)
                         message.id = String(object.id);
                     if (object.method != null)
@@ -231,9 +233,9 @@ export const io = $root.io = (() => {
                 /**
                  * Creates a plain object from a Request message. Also converts values to other types if specified.
                  * @function toObject
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
-                 * @param {io.liriliri.aya.Request} message Request
+                 * @param {io.zinsy23.aya.Request} message Request
                  * @param {$protobuf.IConversionOptions} [options] Conversion options
                  * @returns {Object.<string,*>} Plain object
                  */
@@ -258,7 +260,7 @@ export const io = $root.io = (() => {
                 /**
                  * Converts this Request to JSON.
                  * @function toJSON
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @instance
                  * @returns {Object.<string,*>} JSON object
                  */
@@ -269,7 +271,7 @@ export const io = $root.io = (() => {
                 /**
                  * Gets the default type url for Request
                  * @function getTypeUrl
-                 * @memberof io.liriliri.aya.Request
+                 * @memberof io.zinsy23.aya.Request
                  * @static
                  * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                  * @returns {string} The default type url
@@ -278,7 +280,7 @@ export const io = $root.io = (() => {
                     if (typeUrlPrefix === undefined) {
                         typeUrlPrefix = "type.googleapis.com";
                     }
-                    return typeUrlPrefix + "/io.liriliri.aya.Request";
+                    return typeUrlPrefix + "/io.zinsy23.aya.Request";
                 };
 
                 return Request;
@@ -288,7 +290,7 @@ export const io = $root.io = (() => {
 
                 /**
                  * Properties of a Response.
-                 * @memberof io.liriliri.aya
+                 * @memberof io.zinsy23.aya
                  * @interface IResponse
                  * @property {string|null} [id] Response id
                  * @property {string|null} [result] Response result
@@ -296,11 +298,11 @@ export const io = $root.io = (() => {
 
                 /**
                  * Constructs a new Response.
-                 * @memberof io.liriliri.aya
+                 * @memberof io.zinsy23.aya
                  * @classdesc Represents a Response.
                  * @implements IResponse
                  * @constructor
-                 * @param {io.liriliri.aya.IResponse=} [properties] Properties to set
+                 * @param {io.zinsy23.aya.IResponse=} [properties] Properties to set
                  */
                 function Response(properties) {
                     if (properties)
@@ -312,7 +314,7 @@ export const io = $root.io = (() => {
                 /**
                  * Response id.
                  * @member {string} id
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @instance
                  */
                 Response.prototype.id = "";
@@ -320,7 +322,7 @@ export const io = $root.io = (() => {
                 /**
                  * Response result.
                  * @member {string} result
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @instance
                  */
                 Response.prototype.result = "";
@@ -328,21 +330,21 @@ export const io = $root.io = (() => {
                 /**
                  * Creates a new Response instance using the specified properties.
                  * @function create
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
-                 * @param {io.liriliri.aya.IResponse=} [properties] Properties to set
-                 * @returns {io.liriliri.aya.Response} Response instance
+                 * @param {io.zinsy23.aya.IResponse=} [properties] Properties to set
+                 * @returns {io.zinsy23.aya.Response} Response instance
                  */
                 Response.create = function create(properties) {
                     return new Response(properties);
                 };
 
                 /**
-                 * Encodes the specified Response message. Does not implicitly {@link io.liriliri.aya.Response.verify|verify} messages.
+                 * Encodes the specified Response message. Does not implicitly {@link io.zinsy23.aya.Response.verify|verify} messages.
                  * @function encode
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
-                 * @param {io.liriliri.aya.IResponse} message Response message or plain object to encode
+                 * @param {io.zinsy23.aya.IResponse} message Response message or plain object to encode
                  * @param {$protobuf.Writer} [writer] Writer to encode to
                  * @returns {$protobuf.Writer} Writer
                  */
@@ -357,11 +359,11 @@ export const io = $root.io = (() => {
                 };
 
                 /**
-                 * Encodes the specified Response message, length delimited. Does not implicitly {@link io.liriliri.aya.Response.verify|verify} messages.
+                 * Encodes the specified Response message, length delimited. Does not implicitly {@link io.zinsy23.aya.Response.verify|verify} messages.
                  * @function encodeDelimited
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
-                 * @param {io.liriliri.aya.IResponse} message Response message or plain object to encode
+                 * @param {io.zinsy23.aya.IResponse} message Response message or plain object to encode
                  * @param {$protobuf.Writer} [writer] Writer to encode to
                  * @returns {$protobuf.Writer} Writer
                  */
@@ -372,20 +374,22 @@ export const io = $root.io = (() => {
                 /**
                  * Decodes a Response message from the specified reader or buffer.
                  * @function decode
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
                  * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                  * @param {number} [length] Message length if known beforehand
-                 * @returns {io.liriliri.aya.Response} Response
+                 * @returns {io.zinsy23.aya.Response} Response
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
-                Response.decode = function decode(reader, length) {
+                Response.decode = function decode(reader, length, error) {
                     if (!(reader instanceof $Reader))
                         reader = $Reader.create(reader);
-                    let end = length === undefined ? reader.len : reader.pos + length, message = new $root.io.liriliri.aya.Response();
+                    let end = length === undefined ? reader.len : reader.pos + length, message = new $root.io.zinsy23.aya.Response();
                     while (reader.pos < end) {
                         let tag = reader.uint32();
+                        if (tag === error)
+                            break;
                         switch (tag >>> 3) {
                         case 1: {
                                 message.id = reader.string();
@@ -406,10 +410,10 @@ export const io = $root.io = (() => {
                 /**
                  * Decodes a Response message from the specified reader or buffer, length delimited.
                  * @function decodeDelimited
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
                  * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                 * @returns {io.liriliri.aya.Response} Response
+                 * @returns {io.zinsy23.aya.Response} Response
                  * @throws {Error} If the payload is not a reader or valid buffer
                  * @throws {$protobuf.util.ProtocolError} If required fields are missing
                  */
@@ -422,7 +426,7 @@ export const io = $root.io = (() => {
                 /**
                  * Verifies a Response message.
                  * @function verify
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
                  * @param {Object.<string,*>} message Plain object to verify
                  * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -442,15 +446,15 @@ export const io = $root.io = (() => {
                 /**
                  * Creates a Response message from a plain object. Also converts values to their respective internal types.
                  * @function fromObject
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
                  * @param {Object.<string,*>} object Plain object
-                 * @returns {io.liriliri.aya.Response} Response
+                 * @returns {io.zinsy23.aya.Response} Response
                  */
                 Response.fromObject = function fromObject(object) {
-                    if (object instanceof $root.io.liriliri.aya.Response)
+                    if (object instanceof $root.io.zinsy23.aya.Response)
                         return object;
-                    let message = new $root.io.liriliri.aya.Response();
+                    let message = new $root.io.zinsy23.aya.Response();
                     if (object.id != null)
                         message.id = String(object.id);
                     if (object.result != null)
@@ -461,9 +465,9 @@ export const io = $root.io = (() => {
                 /**
                  * Creates a plain object from a Response message. Also converts values to other types if specified.
                  * @function toObject
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
-                 * @param {io.liriliri.aya.Response} message Response
+                 * @param {io.zinsy23.aya.Response} message Response
                  * @param {$protobuf.IConversionOptions} [options] Conversion options
                  * @returns {Object.<string,*>} Plain object
                  */
@@ -485,7 +489,7 @@ export const io = $root.io = (() => {
                 /**
                  * Converts this Response to JSON.
                  * @function toJSON
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @instance
                  * @returns {Object.<string,*>} JSON object
                  */
@@ -496,7 +500,7 @@ export const io = $root.io = (() => {
                 /**
                  * Gets the default type url for Response
                  * @function getTypeUrl
-                 * @memberof io.liriliri.aya.Response
+                 * @memberof io.zinsy23.aya.Response
                  * @static
                  * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                  * @returns {string} The default type url
@@ -505,7 +509,7 @@ export const io = $root.io = (() => {
                     if (typeUrlPrefix === undefined) {
                         typeUrlPrefix = "type.googleapis.com";
                     }
-                    return typeUrlPrefix + "/io.liriliri.aya.Response";
+                    return typeUrlPrefix + "/io.zinsy23.aya.Response";
                 };
 
                 return Response;
@@ -514,7 +518,7 @@ export const io = $root.io = (() => {
             return aya;
         })();
 
-        return liriliri;
+        return zinsy23;
     })();
 
     return io;

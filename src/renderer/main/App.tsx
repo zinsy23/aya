@@ -27,7 +27,7 @@ export default observer(function App() {
     const offUpdateAvailable = main.on('updateAvailable', async () => {
       const result = await Modal.confirm(t('updateAvailable'))
       if (result) {
-        main.openExternal('https://aya.liriliri.io')
+        // main.openExternal('https://aya.liriliri.io')
       }
     })
     return () => {

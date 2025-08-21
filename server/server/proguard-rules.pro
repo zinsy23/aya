@@ -1,1 +1,1 @@
--keep class io.liriliri.aya.* { *; }
+-keep class io.zinsy23.aya.* { *; }
